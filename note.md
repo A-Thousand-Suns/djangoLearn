@@ -21,3 +21,32 @@ from django.conf.urls import url
     - 第一个参数是request
     - 永远记得返回response
     
+##html
+- ul>li*n + tab快捷生成
+- 在views中渲染html文件（使用第二种）
+    - 在App文件夹中操作
+        - 在views中定义对应的函数，定义return时使用render(request, 'htmlname')
+        - 在所在的App文件夹中新建templates文件夹，在其中新建对应的heml文件
+        - 将templates 文件夹 mark the dictionary as template folder
+        - 在settings文件中的INSTALLED_APPS添加该App文件夹
+    - 在根目录下操作
+        - 在根目录下新建templates文件夹并mark as template folder
+        - 在该temlates文件夹下新建所需的html文件
+        - 在views 文件中添加对应的函数
+        - 在settings文件的TEMPLATES的'DIRS'中添加os.path.join(BASE_DIR, 'templates')
+
+##路由分发
+- 新建一个App 为Two, 在settings里将Two注册
+- 在two中新建urls文件
+- 在项目urls文件中添加url(r'^two/', include('Two.urls')),
+##models 使用了ORM技术
+- object relationshil mapping对象关系映射
+- 将业务逻辑进行了解耦
+    - objec.save()
+    - object.delete()
+- 关系型数据库
+    - DDL
+    - 通过model进行表的定义
+    
+##快捷键
+- ctrl + p 参数提示
