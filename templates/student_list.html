@@ -7,5 +7,14 @@
 <body>
 <h3>ubuntu</h3>
 <h2>{{ hobby }}</h2>
+<h2>{{ eat }}</h2>
+<h1>StudentList</h1>
+<ul>
+    {% for student in students %}
+        <li>{{ student.s_name }}</li>
+    {% endfor %}
+
+    
+</ul>
 </body>
 </html>

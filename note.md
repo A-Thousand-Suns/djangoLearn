@@ -47,6 +47,20 @@ from django.conf.urls import url
 - 关系型数据库
     - DDL
     - 通过model进行表的定义
+    - 数据操作
+        - 增删改查
+        - 存储
+            - save()
+        - 查询
+            - 查所有 Classname.objects.all()
+            - 查单个 Classname.objects.get(args)
+        - 查询
+            - 需要基于查询
+            - 查找到的对象修改属性之后save()
+        - 删除
+            - 基于查询
+            - 查找到的对象使用delete()
+      
     
 ##快捷键
 - ctrl + p 参数提示
