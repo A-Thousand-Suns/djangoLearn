@@ -1,2 +1,0 @@
-python manage.py startapp appName 创建新应用
-python manage.py runsrever
