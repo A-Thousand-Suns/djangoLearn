@@ -15,5 +15,11 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="MySQL - HelloDjango@localhost" uuid="2e1172e1-4386-48b6-8f2b-95f2d1f325c3">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/HelloDjango</jdbc-url>
+    </data-source>
   </component>
 </project>

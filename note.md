@@ -9,7 +9,7 @@ python manage.py migrate进行迁移
 from django.conf.urls import url
 万能键：alt + enter
 实现一个请求，首先在urls中注册一个路由
-##实现一个请求
+## 实现一个请求
 - 注册一个路由
     - urls中
         - url
@@ -21,7 +21,7 @@ from django.conf.urls import url
     - 第一个参数是request
     - 永远记得返回response
     
-##html
+## html
 - ul>li*n + tab快捷生成
 - 在views中渲染html文件（使用第二种）
     - 在App文件夹中操作
@@ -35,11 +35,11 @@ from django.conf.urls import url
         - 在views 文件中添加对应的函数
         - 在settings文件的TEMPLATES的'DIRS'中添加os.path.join(BASE_DIR, 'templates')
 
-##路由分发
+## 路由分发
 - 新建一个App 为Two, 在settings里将Two注册
 - 在two中新建urls文件
 - 在项目urls文件中添加url(r'^two/', include('Two.urls')),
-##models 使用了ORM技术
+## models 使用了ORM技术
 - object relationshil mapping对象关系映射
 - 将业务逻辑进行了解耦
     - objec.save()
@@ -62,5 +62,8 @@ from django.conf.urls import url
             - 查找到的对象使用delete()
       
     
-##快捷键
+## 快捷键
 - ctrl + p 参数提示
+- alt + enter万能键
+
+## mysql
